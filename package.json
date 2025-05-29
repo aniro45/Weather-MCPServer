@@ -1,0 +1,23 @@
+{
+  "name": "weather-app-mcp-server",
+  "version": "1.0.0",
+  "description": "A basic Node.js project with Express and TypeScript",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "tsc && chmod 755 dist/index.stdio.js",
+    "dev-sse": "ts-node-dev src/index.sse.ts",
+    "dev-stream": "ts-node-dev src/index.stream.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "openai": "^4.96.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.4.2",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  }
+}
